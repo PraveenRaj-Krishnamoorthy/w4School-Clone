@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3Schools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="sidebar d-none">
+        <div class="list">
+            <div class="close" onclick="func()"><img src="./images/close.png" width="100%" height="100%"></div>
+            <h1>Course List:-</h1><br>
+            <h2 class="listing" style="color: black;"></h2>
+        </div>
+        <div class="total" style="font-size: 25px;">
+            <h1>Total: </h1>
+        </div>
+
+    </div> -->
+    <div class="top">
+        <div class="nav">
+            <div class="f-half">
+                <div class="logo" style="padding: 6px 15px;"><img src="./images/w3schools.svg" width="45px"
+                        style="padding: 3px;">
+                </div>
+                <div class="select">
+                    <div class="opt">
+                        <span>Tutorials <img src="./images/down-arrow.png" width="15px"></span>
+                    </div>
+                    <div class="opt">
+                        <span>Exercises <img src="./images/down-arrow.png" width="15px"></span>
+                    </div>
+                    <div class="opt">
+                        <span>Certificates <img src="./images/down-arrow.png" width="15px"></span>
+                    </div>
+                    <div class="opt">
+                        <span>Services <img src="./images/down-arrow.png" width="15px"></span>
+                    </div>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Search...">
+                    <img src="./images/dark-mode.png" width="40px" height="40px">
+                </div>
+            </div>
+            <div class="s-half">
+                <div class="s-one">
+                    <div class="plus"><img src="./images/sparkling.png">
+                        <p>Plus</p>
+                    </div>
+                    <div class="space"><img src="./images/code.png">
+                        <p>Spaces</p>
+                    </div>
+                    <div class="get"><img src="./images/trolley-cart.png">
+                        <p>Get Certified</p>
+                    </div>
+                </div>
+                <div class="s-two">
+                    <button class="b-o">Sign Up</button>
+                    <button class="b-t">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="left"><img src="./images/back.png" alt=""></div>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+                <li>MySql</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+                <li>MySql</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+            <div class="right"><img src="./images/next.png" alt=""></div>
+        </div>
+    </div>
+    <div class="sticky"></div>
+    <div class="background">
+        <div class="search">
+            <h1>Learn to Code</h1>
+            <p>With the world's largest web developer site.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search our tutorials, eg.HTML">
+                <button>
+                    <img src="./images/glass.png" alt="">
+                </button>
+            </div>
+            <p style="color: white;"><u>Not sure where to begin?</u></p>
+        </div>
+        <img class="d-none" src="./images/lynx_in_space.png" alt="">
+    </div>
+    <div class="wave">
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>
+    </div>
+    <!-- html -->
+    <div class="html-p">
+        <div class="html-c">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,sans-serif;">
+                HTML
+            </h1>
+            <p>The language for building web pages</p>
+            <div class="html-c-button">
+                <button onclick="add('html')" style="background-color: #04aa6d; color: white">
+                    Add Html
+                </button>
+                <button onclick="remove('html')" style="background-color: #fff080; color: black">
+                    Remove Html
+                </button>
+                <button style="background-color: #000; color: white">
+                    Html Reference
+                </button>
+                <button style="background-color: #ffb3bb; color: black">
+                    Get Certified
+                </button>
+            </div>
+        </div>
+        <div class="html-g">
+            <div class="html-code-box">
+                <h2>Html Example:</h2>
+                <div class="html-code">
+                    <div class="green-line"></div>
+                    <div class="html-coding">
+                        <span class="tagnamecolor" style="color: brown">
+                            <span class="tagcolor" style="color: mediumblue">&lt;</span>!DOCTYPE<span
+                                class="attributecolor" style="color: red">html</span>
+                            <span class="tagcolor" style="color: mediumblue">&gt;</span></span><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>html<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br /><span class="tagnamecolor"
+                            style="color: brown"><span class="tagcolor" style="color: mediumblue">&lt;</span>head<span
+                                class="tagcolor" style="color: mediumblue">&gt;</span></span><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>title<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor"
+                            style="color: brown"><span class="tagcolor" style="color: mediumblue">&lt;</span>/title<span
+                                class="tagcolor" style="color: mediumblue">&gt;</span></span><br /><span
+                            class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/head<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>body<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br /><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>h1<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor"
+                            style="color: brown"><span class="tagcolor" style="color: mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color: mediumblue">&gt;</span></span><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>p<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>This is a paragraph.<span
+                            class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/p<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br /><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/body<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/html<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+                <button>Try It Yourself</button>
+            </div>
+        </div>
+    </div>
+    <!-- css -->
+    <div class="html-p" style="background-color: #fff4a3">
+        <div class="html-c">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,sans-serif;">
+                Css
+            </h1>
+            <p>The language for Styling web pages</p>
+            <div class="html-c-button">
+                <button onclick="add('css')" style="background-color: #04aa6d; color: white">
+                    Add Css
+                </button>
+                <button onclick="remove('css')" style="background-color: #fff080; color: black">
+                    Remove Css
+                </button>
+                <button style="background-color: #000; color: white">
+                    Css Reference
+                </button>
+                <button style="background-color: #ffb3bb; color: black">
+                    Get Certified
+                </button>
+            </div>
+        </div>
+        <div class="html-g">
+            <div class="html-code-box">
+                <h2>Css Example:</h2>
+                <div class="html-code">
+                    <div class="green-line"></div>
+                    <div class="html-coding">
+                        <span class="cssselectorcolor" style="color: brown">
+                            body <span class="cssdelimitercolor" style="color: black">{</span><span
+                                class="csspropertycolor" style="color: red"><br />
+                                &nbsp; background-color<span class="csspropertyvaluecolor"
+                                    style="color: mediumblue"><span class="cssdelimitercolor"
+                                        style="color: black">:</span>
+                                    lightblue<span class="cssdelimitercolor"
+                                        style="color: black">;</span></span><br /></span><span class="cssdelimitercolor"
+                                style="color: black">}</span><br /><br />
+                            h1 <span class="cssdelimitercolor" style="color: black">{</span><span
+                                class="csspropertycolor" style="color: red"><br />
+                                &nbsp; color<span class="csspropertyvaluecolor" style="color: mediumblue"><span
+                                        class="cssdelimitercolor" style="color: black">:</span>
+                                    white<span class="cssdelimitercolor" style="color: black">;</span></span><br />
+                                &nbsp; text-align<span class="csspropertyvaluecolor" style="color: mediumblue"><span
+                                        class="cssdelimitercolor" style="color: black">:</span>
+                                    center<span class="cssdelimitercolor"
+                                        style="color: black">;</span></span><br /></span><span class="cssdelimitercolor"
+                                style="color: black">}</span><br /><br />p
+                            <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                                style="color: red"><br />&nbsp; font-family<span class="csspropertyvaluecolor"
+                                    style="color: mediumblue"><span class="cssdelimitercolor"
+                                        style="color: black">:</span>
+                                    verdana<span class="cssdelimitercolor"
+                                        style="color: black">;</span></span><br /></span><span class="cssdelimitercolor"
+                                style="color: black">}</span>
+                        </span>
+
+                    </div>
+                </div>
+                <button>Try It Yourself</button>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <div class="html-p" style="background-color: #282a35">
+        <div class="html-c" style="height: 350px;">
+            <h1 style="
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+sans-serif;
+color: white;
+">
+                JavaScript
+            </h1>
+            <p style="color: white">The language for Programming web pages</p>
+            <div class="html-c-button" style="height: 190px;">
+                <button onclick="add('js')" style="background-color: #04aa6d; color: white">
+                    Add JavaScript
+                </button>
+                <button onclick="remove('js')" style="background-color: #000; color: white">
+                    Remove JavaScript
+                </button>
+                <button style="background-color: #ffb3bb; color: black">
+                    Get Certified
+                </button>
+            </div>
+        </div>
+        <div class="html-g">
+            <div class="html-code-box">
+                <h2>JavaScript Example:</h2>
+                <div class="html-code">
+                    <div class="green-line"></div>
+                    <div class="html-coding">
+                        <span class="tagnamecolor" style="color: brown">
+                            <span class="tagcolor" style="color: mediumblue">&lt;</span>button<span
+                                class="attributecolor" style="color: red">
+                                onclick<span class="attributevaluecolor"
+                                    style="color: mediumblue">="myFunction()"</span></span><span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor"
+                            style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/button<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><br /><br />
+                        <span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>script<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span><span class="jscolor"
+                            style="color: black"><br />
+                            <span class="jskeywordcolor" style="color: mediumblue">function</span>
+                            myFunction() {<br /><span class="jsnumbercolor" style="color: red">
+                            </span>
+                            &nbsp;
+                            <span class="jskeywordcolor" style="color: mediumblue">let</span>
+                            x = document.<span class="jspropertycolor" style="color: black">getElementById</span>(<span
+                                class="jsstringcolor" style="color: brown">"demo"</span>);<br /><span
+                                class="jsnumbercolor" style="color: red"> </span>&nbsp; x.<span class="jspropertycolor"
+                                style="color: black">style</span>.<span class="jspropertycolor"
+                                style="color: black">fontSize</span>
+                            =
+                            <span class="jsstringcolor" style="color: brown">"25px"</span>;
+                            <br /><span class="jsnumbercolor" style="color: red"> </span>&nbsp; x.<span
+                                class="jspropertycolor" style="color: black">style</span>.<span class="jspropertycolor"
+                                style="color: black">color</span>
+                            = <span class="jsstringcolor" style="color: brown">"red"</span>;
+                            <br />}<br /> </span><span class="tagnamecolor" style="color: brown"><span class="tagcolor"
+                                style="color: mediumblue">&lt;</span>/script<span class="tagcolor"
+                                style="color: mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+                <button>Try It Yourself</button>
+            </div>
+        </div>
+    </div>
+    <!-- React -->
+    <div class="html-p" style="background-color: #3aa4bec1">
+        <div class="html-c" style="height: 330px;">
+            <h1 style="
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+sans-serif;
+">
+                React
+            </h1>
+            <p>The language for Dynamic</p>
+            <div class="html-c-button" style="height: 190px;">
+                <button onclick="add('react')" style="background-color: #04aa6d; color: white">
+                    Add React
+                </button>
+                <button onclick="remove('react')" style="background-color: #000; color: white">
+                    Remove React
+                </button>
+                <button style="background-color: #ffb3bb; color: black">
+                    Get Certified
+                </button>
+            </div>
+        </div>
+        <div class="html-g">
+            <div class="html-code-box">
+                <h2>React Example:</h2>
+                <div class="html-code">
+                    <div class="green-line"></div>
+                    <div class="html-coding">
+                        <span class="jscolor" style="color: black">
+                            <span class="jsnumbercolor" style="color: red"> </span>
+                            <span class="jskeywordcolor" style="color: mediumblue">npx create-react-app</span>
+                            <span class="jsnumbercolor" style="color: red">Myapp</span> &gt;
+                            <span class="jsnumbercolor" style="color: red"></span<br />&nbsp;
+                                <span class="jsstringcolor" style="color: brown">npm start</span>
+                                <span class="jsnumbercolor" style="color: red"> </span>
+                            </span>
+                    </div>
+                </div>
+                <button>Try It Yourself</button>
+            </div>
+        </div>
+    </div>
+    <!-- Node -->
+    <div class="html-p" style="background-color: #1a78039a">
+        <div class="html-c">
+            <h1 style="
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+sans-serif;
+">
+                NodeJS
+            </h1>
+            <p>The language for Server environment</p>
+            <div class="html-c-button">
+                <button onclick="add('node')" style="background-color: #04aa6d; color: white">
+                    Add NodeJS
+                </button>
+                <button onclick="remove('node')" style="background-color: #fff080; color: black">
+                    Remove NodeJS
+                </button>
+                <button style="background-color: #000; color: white">
+                    NodeJS Reference
+                </button>
+                <button style="background-color: #ffb3bb; color: black">
+                    Get Certified
+                </button>
+            </div>
+        </div>
+        <div class="html-g">
+            <div class="html-code-box">
+                <h2>NodeJS Example:</h2>
+                <div class="html-code">
+                    <div class="green-line"></div>
+                    <div class="html-coding">
+                        <span class="jscolor" style="color: black">
+                            <span class="jsnumbercolor" style="color: red"> </span>
+                            <span class="jskeywordcolor" style="color: mediumblue">npm init --y</span>
+                            <span class="jsnumbercolor" style="color: red"></span>
+                            <span class="jsnumbercolor" style="color: red"></span><br />&nbsp;
+                            npm<span class="jsstringcolor" style="color: brown"> run serve</span>
+                            <span class="jsnumbercolor" style="color: red"> </span>
+                        </span>
+                    </div>
+                </div>
+                <button>Try It Yourself</button>
+            </div>
+        </div>
+    </div>
+    <!-- **************************************************** -->
+    <!-- php -->
+    <div class="box-items">
+        <div class="one">
+            <div class="php">
+                <h1>PHP</h1>
+                <p>A web server programming language</p>
+                <button>Learn PHP</button>
+            </div>
+            <div class="jquery">
+                <h1>jQuery</h1>
+                <p>A JS library for developing web pages</p>
+                <button>Learn jQuery</button>
+            </div>
+        </div>
+
+        <!-- java -->
+        <div class="one">
+            <div class="php" style="background-color: #F3ECEA;">
+                <h1>JAVA</h1>
+                <p>A programming language</p>
+                <button>Learn Java</button>
+            </div>
+            <div class="jquery" style="background-color: #D9EEE1;">
+                <h1>C++</h1>
+                <p>A programing language</p>
+                <button>Learn C++</button>
+            </div>
+        </div>
+
+        <!-- W3.Css -->
+        <div class="one">
+            <div class="php" style="background-color: #96D4D4;">
+                <h1>W3.Css</h1>
+                <p>A CSS framework for faster responsive webPages</p>
+                <button>Learn W3.Css</button>
+            </div>
+            <div class="jquery" style="background-color: #E7E9EB;">
+                <h1>Bootstrap</h1>
+                <p>A CSS framework for designing better web pages</p>
+                <button>Learn Bootstrap</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************************************** -->
+    <!-- c-c++ -->
+    <div class="c-c-plus">
+        <div class="c">
+            <h1>C</h1>
+        </div>
+        <div class="cplus">
+            <h1>C++</h1>
+        </div>
+    </div>
+
+    <!-- box -->
+    <div class="tile-box">
+        <!-- r -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #F3ECEA;">
+                    <h1>R</h1>
+                </div>
+                <div class="kotlin" style="background-color: #D9EEE1;">
+                    <h1>Kotlin</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #96D4D4;">
+                    <h1>NodeJS</h1>
+                </div>
+                <div class="react" style="background-color: #FFC0C7;">
+                    <h1>React</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- json -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #FFF4A3;">
+                    <h1>JSON</h1>
+                </div>
+                <div class="kotlin" style="background-color: #F3ECEA;">
+                    <h1>Vue</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #D9EEE1;">
+                    <h1>MySql</h1>
+                </div>
+                <div class="react" style="background-color: #96D4D4;">
+                    <h1>XML</h1>
+                </div>
+            </div>
+        </div>
+        <!-- sass -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #FFC0C7;">
+                    <h1>Sass</h1>
+                </div>
+                <div class="kotlin" style="background-color: #FFF4A3;">
+                    <h1>Icons</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #F3ECEA;">
+                    <h1>RWD</h1>
+                </div>
+                <div class="react" style="background-color: #D9EEE1;">
+                    <h1>Graphics</h1>
+                </div>
+            </div>
+        </div>
+        <!-- svg -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #96D4D4;">
+                    <h1>SVG</h1>
+                </div>
+                <div class="kotlin" style="background-color: #FFC0C7;">
+                    <h1>Canvas</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #FFF4A3;">
+                    <h1>Raspberry Pi</h1>
+                </div>
+                <div class="react" style="background-color: #F3ECEA;">
+                    <h1>Cyber Security</h1>
+                </div>
+            </div>
+        </div>
+        <!-- colors -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #D9EEE1;">
+                    <h1>Colors</h1>
+                </div>
+                <div class="kotlin" style="background-color: #96D4D4;">
+                    <h1>Git</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #FFC0C7;">
+                    <h1>Matplotlib</h1>
+                </div>
+                <div class="react" style="background-color: #FFF4A3;">
+                    <h1>Numpy</h1>
+                </div>
+            </div>
+        </div>
+        <!-- pandas -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #F3ECEA;">
+                    <h1>Pandas</h1>
+                </div>
+                <div class="kotlin" style="background-color: #D9EEE1;">
+                    <h1>SciPy</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #96D4D4;">
+                    <h1>ASP</h1>
+                </div>
+                <div class="react" style="background-color: #FFC0C7;">
+                    <h1>AngularJS</h1>
+                </div>
+            </div>
+        </div>
+        <!-- appml -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #FFF4A3;">
+                    <h1>AppML</h1>
+                </div>
+                <div class="kotlin" style="background-color: #F3ECEA;">
+                    <h1>Go</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #D9EEE1;">
+                    <h1>TypeScript</h1>
+                </div>
+                <div class="react" style="background-color: #96D4D4;">
+                    <h1>Django</h1>
+                </div>
+            </div>
+        </div>
+        <!-- MongoDB -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #FFC0C7;">
+                    <h1>MongoDB</h1>
+                </div>
+                <div class="kotlin" style="background-color: #FFF4A3;">
+                    <h1>Statistics</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color: #F3ECEA;">
+                    <h1>Data Science</h1>
+                </div>
+                <div class="react" style="background-color: #D9EEE1;">
+                    <h1>Typing Speed</h1>
+                </div>
+            </div>
+        </div>
+        <!-- code game -->
+        <div class="one">
+            <div class="o">
+                <div class="r" style="background-color: #96D4D4;">
+                    <h1>HowTo</h1>
+                </div>
+                <div class="kotlin" style="background-color: #FFC0C7;">
+                    <h1>Spaces</h1>
+                </div>
+            </div>
+            <div class="t">
+                <div class="node" style="background-color:  #FFF4A3;">
+                    <h1>PostgreSQL</h1>
+                </div>
+                <div class="react" style="background-color: #F3ECEA;">
+                    <h1>HowTo</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- last-tile -->
+    <div class="last-tile">
+        <div class="ex-ds">
+            <div class="excel" style="background-color: #96D4D4;">
+                <h1>Excel</h1>
+            </div>
+            <div class="dsa" style="background-color: #FFF4A3;">
+                <h1>DSA - Data Structure</h1>
+            </div>
+        </div>
+        <div class="ml-ai">
+            <div class="machine" style="background-color: #FFC0C7;">
+                <h1>Machine Learning</h1>
+            </div>
+            <div class="ai" style="background-color: #F3ECEA;">
+                <h1>Artificial Intelligence</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
